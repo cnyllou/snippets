@@ -3,6 +3,12 @@
 usermod -L testuser
 passwd -l testuser
 ```
+# Unlock the password
+```bash
+usermod -U testuser
+passwd -u testuser
+```
+
 # Changing the shell
 ```bash
 usermod -s /sbin/nologin [username]
@@ -20,3 +26,5 @@ userdel userName
 userdel [options] userName
 userdel -r userName
 ```
+[link 1](https://www.thegeekdiary.com/unix-linux-how-to-lock-or-disable-an-user-account/)
+[link 2](https://www.learnitguide.net/2016/08/how-to-lock-and-unlock-user-account-linux.html)
